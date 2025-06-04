@@ -8,4 +8,6 @@ app.get('/', (_req: Request, res: Response) => {
     res.send('expressAPI');
 });
 
+// add routes here
+
 export default app;
