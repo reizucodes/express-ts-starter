@@ -1,11 +1,14 @@
+import dotenv from 'dotenv';
 import express, { Request, Response } from 'express';
 
+dotenv.config();
+
 const app = express();
-const PORT = process.env.PORT ?? 3000;
+const PORT = parseInt(process.env.PORT || '3000', 10);
 
 app.use(express.json());
 
-app.get('/', (_req: Request, res: Response) => {
+app.get('/', (req: Request, res: Response) => {
     res.json({ message: 'Hello from Express + TypeScript starter!' });
 });
 

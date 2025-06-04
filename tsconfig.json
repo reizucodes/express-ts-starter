@@ -1,13 +1,32 @@
 {
     "compilerOptions": {
-        "target": "ES2020",
+        // Target modern JS output
+        "target": "ES2022",                      // enables top-level await, class fields
         "module": "commonjs",
+
+        // Paths
         "rootDir": "./src",
         "outDir": "./dist",
-        "strict": true,
+        "baseUrl": "./",                         // allow absolute paths from project root
+        "paths": {
+          "@/*": ["src/*"]                       // optional: use "@/models/User" etc.
+        },
+        // Type checking
+        "strict": true,                          // enable all strict type checks
+        "noImplicitAny": true,                   // require explicit types
+        "strictNullChecks": true,                // null and undefined are separate types
+        "strictPropertyInitialization": true,    // class properties must be initialized
+        "noImplicitReturns": true,               // ensure all code paths return
+        "noFallthroughCasesInSwitch": true,      // prevent switch fallthroughs
+        // Module resolution
         "esModuleInterop": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,               // allow importing .json files
+        "allowSyntheticDefaultImports": true,
+        // Output
         "forceConsistentCasingInFileNames": true,
-        "skipLibCheck": true
+        "skipLibCheck": true                     // faster builds by skipping type checking of dependencies
     },
-    "include": ["src"]
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
 }
