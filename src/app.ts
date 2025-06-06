@@ -1,13 +1,14 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
+import api from './routes/api'
+import web from './routes/web';
 
 const app = express();
 app.use(express.json());
 
-// Health check route
-app.get('/', (_req: Request, res: Response) => {
-    res.send('expressAPI');
-});
+// Add routes here
+app.use('/', web);
+app.use('/api', api);
 
-// add routes here
+// Add middleware, error handlers here
 
 export default app;
