@@ -25,10 +25,22 @@ A clean and scalable Express.js starter using TypeScript and MongoDB, with suppo
 
 ## Usage
 
-1. Clone the specific branch:
-
+1. Clone the specific branch
    ```bash
    git clone --single-branch --branch starter/express-mongodb-mvc <repository_url>
-2. (Optional) Update the project name and relevant metadata in package.json to personalize new project.
-2. Run `npm install`
-3. Run `npm run dev` to start development server
+2. Navigate into project folder
+    ```bash  
+    cd <folder-name>
+3. Remove the existing Git history to start fresh for a new project
+    ```bash
+    rm -rf .git
+- This deletes all Git metadata so your new commits won't be linked to the original repo
+4. (Optional) Personalize your project by updating the `package.json`
+- Change the `name`, `version`, `author`, and any other metadata to fit your new project.
+5. Install dependencies
+    ```bash
+    npm install
+6. Start the development server with hot reload
+    ```bash
+    npm run dev
+
