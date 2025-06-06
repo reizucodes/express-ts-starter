@@ -12,6 +12,9 @@ A clean and scalable Express.js starter using TypeScript and MongoDB, with suppo
 - ✅ Path aliases via `@` (with `tsconfig-paths`)
 - ✅ Nodemon for hot reload during development
 - ✅ ESLint configured
+- ✅ Extended MVC architecture (Model → View (JSON) → Controller)  
+- ✅ Repository pattern implementing interface contracts for clean data abstraction  
+
 
 ## Scripts
 
