@@ -27,7 +27,7 @@ A clean and scalable Express.js starter using TypeScript and MongoDB, with suppo
 
 1. Clone the specific branch
    ```bash
-   git clone --single-branch --branch starter/express-mongodb-mvc <repository_url>
+   git clone --single-branch --branch starter/express-mongodb-mvc https://github.com/reizucodes/express-ts-starter.git <custom-folder-name>
 2. Navigate into project folder
     ```bash  
     cd <folder-name>
@@ -43,4 +43,20 @@ A clean and scalable Express.js starter using TypeScript and MongoDB, with suppo
 6. Start the development server with hot reload
     ```bash
     npm run dev
+## Sample Endpoints
+### Web Routes
 
+- **GET** `/`  
+  Entry point for web routes. **Response:**  
+  ```json
+  "expressAPI"
+- **GET** `/api`  
+  Base API route.
+  **Response:**  
+  ```json
+  "message": "Start building APIs"
+- **GET** `/api/sample`  
+  Example API route implementing controller architecture.
+    **Response:**  
+  ```json
+  "message": "This is as a sample response"
