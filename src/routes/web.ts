@@ -6,4 +6,6 @@ web.get('/', (_req: Request, res: Response) => {
     res.send('expressAPI');
 })
 
+// add web routes here
+
 export default web;
