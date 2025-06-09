@@ -40,7 +40,10 @@ A clean and scalable Express.js starter using TypeScript and MongoDB, with suppo
 5. Install dependencies
     ```bash
     npm install
-6. Start the development server with hot reload
+6. Generate .env file
+    ```bash
+    cp .env.example .env
+7. Start the development server with hot reload
     ```bash
     npm run dev
 ## Sample Endpoints

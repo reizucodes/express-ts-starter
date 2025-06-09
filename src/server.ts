@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 dotenv.config(); // Load environment variables before other imports that depend on them
 
-import app from './app';
+import app from '@/app';
 import config from '@/config/database';
 
 // Server configuration
@@ -29,7 +29,7 @@ const initServer = async (): Promise<void> => {
       await mongoose.connect(uri);
       console.log('✅ MongoDB connected');
     } else {
-      console.warn('⚠️ Skipping DB init (DB_INIT is false)');
+      console.warn('⚠️ Skipping database connection. (DB_INIT is false)');
     }
 
     // Start the server

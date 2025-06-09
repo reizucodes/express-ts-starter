@@ -1,6 +1,6 @@
 import express from 'express';
-import api from './routes/api'
-import web from './routes/web';
+import api from '@/routes/api'
+import web from '@/routes/web';
 
 const app = express();
 app.use(express.json());
